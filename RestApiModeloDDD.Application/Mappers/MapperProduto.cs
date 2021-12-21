@@ -1,13 +1,10 @@
 ﻿using RestApiModeloDDD.Application.Dtos;
+using RestApiModeloDDD.Application.Interfaces.Mappers;
 using RestApiModeloDDD.Domain.Entitys;
-using RestApiModeloDDD.Infrastructure.CrossCutting.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace RestApiModeloDDD.Infrastructure.CrossCutting.Mapper
+namespace RestApiModeloDDD.Application.Mappers
 {
     public class MapperProduto : IMapperProduto
     {
@@ -37,9 +34,13 @@ namespace RestApiModeloDDD.Infrastructure.CrossCutting.Mapper
 
         public IEnumerable<ProdutoDto> MapperListProdutosDto(IEnumerable<Produto> produtos)
         {
-            var dto = produtos.Select(p => new ProdutoDto { Id = p.Id,
-                                                            Nome = p.Nome,
-                                                            Valor = p.Valor });
+            var dto = produtos.Select(p => new ProdutoDto
+            {
+                Id = p.Id,
+                Nome = p.Nome,
+                Valor = p.Valor
+            });
+
             return dto;
         }
     }

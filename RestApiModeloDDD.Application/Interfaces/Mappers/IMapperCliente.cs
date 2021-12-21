@@ -2,11 +2,11 @@
 using RestApiModeloDDD.Domain.Entitys;
 using System.Collections.Generic;
 
-namespace RestApiModeloDDD.Infrastructure.CrossCutting.Interfaces
+namespace RestApiModeloDDD.Application.Interfaces.Mappers
 {
     public interface IMapperCliente
     {
-        Cliente MapperDtoToEntity(ClienteDto);
+        Cliente MapperDtoToEntity(ClienteDto clienteDto);
 
         IEnumerable<ClienteDto> MapperListClienteDto(IEnumerable<Cliente> clientes);
 

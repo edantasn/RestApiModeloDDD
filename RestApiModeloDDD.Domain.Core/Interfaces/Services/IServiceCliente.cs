@@ -7,7 +7,5 @@ using System.Threading.Tasks;
 
 namespace RestApiModeloDDD.Domain.Core.Interfaces.Services
 {
-    public interface IServiceCliente : IServiceBase<Cliente>
-    {
-    }
+    public interface IServiceCliente : IServiceBase<Cliente> {}
 }

@@ -119,13 +119,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CrossCutting\" />
+    <Folder Include="CrossCutting\IOC\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RestApiModeloDDD.Application\RestApiModeloDDD.Application.csproj">
+      <Project>{3F73D5CF-CE50-4973-9CE3-A95D3A87634E}</Project>
+      <Name>RestApiModeloDDD.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RestApiModeloDDD.Domain.Core\RestApiModeloDDD.Domain.Core.csproj">
       <Project>{4FE4D022-FCC7-4489-BFCF-AF5315D3E32B}</Project>
       <Name>RestApiModeloDDD.Domain.Core</Name>
