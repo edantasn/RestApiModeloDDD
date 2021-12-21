@@ -112,12 +112,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceBase.cs" />
+    <Compile Include="ServiceCliente.cs" />
+    <Compile Include="ServiceProduto.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestApiModeloDDD.Domain.Core\RestApiModeloDDD.Domain.Core.csproj">
+      <Project>{4FE4D022-FCC7-4489-BFCF-AF5315D3E32B}</Project>
+      <Name>RestApiModeloDDD.Domain.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestApiModeloDDD.Domain\RestApiModeloDDD.Domain.csproj">
+      <Project>{689E5FB1-9FEA-4219-BB9F-4AD61B60CD5B}</Project>
+      <Name>RestApiModeloDDD.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

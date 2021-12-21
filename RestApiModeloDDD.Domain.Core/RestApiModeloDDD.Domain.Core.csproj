@@ -115,11 +115,12 @@
     <Compile Include="Interfaces\Repositorys\IRepositoryBase.cs" />
     <Compile Include="Interfaces\Repositorys\IRepositoryCliente.cs" />
     <Compile Include="Interfaces\Repositorys\IRepositoryProduto.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
+    <Compile Include="Interfaces\Services\IServiceCliente.cs" />
+    <Compile Include="Interfaces\Services\IServiceProduto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
