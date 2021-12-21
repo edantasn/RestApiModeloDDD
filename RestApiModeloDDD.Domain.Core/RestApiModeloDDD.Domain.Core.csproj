@@ -112,15 +112,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Repositorys\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Repositorys\IRepositoryCliente.cs" />
+    <Compile Include="Interfaces\Repositorys\IRepositoryProduto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\Repositorys\" />
     <Folder Include="Interfaces\Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestApiModeloDDD.Domain\RestApiModeloDDD.Domain.csproj">
+      <Project>{689E5FB1-9FEA-4219-BB9F-4AD61B60CD5B}</Project>
+      <Name>RestApiModeloDDD.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
