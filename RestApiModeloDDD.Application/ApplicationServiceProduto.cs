@@ -2,11 +2,7 @@
 using RestApiModeloDDD.Application.Interfaces;
 using RestApiModeloDDD.Application.Interfaces.Mappers;
 using RestApiModeloDDD.Domain.Core.Interfaces.Services;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RestApiModeloDDD.Application
 {
@@ -14,6 +10,7 @@ namespace RestApiModeloDDD.Application
     {
         private readonly IServiceProduto serviceProduto;
         private readonly IMapperProduto mapperProduto;
+
         public void Add(ProdutoDto produtoDto)
         {
             var produto = mapperProduto.MapperDtoToEntity(produtoDto);

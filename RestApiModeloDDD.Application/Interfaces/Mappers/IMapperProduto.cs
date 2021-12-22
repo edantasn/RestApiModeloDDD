@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RestApiModeloDDD.Application.Interfaces.Mappers
 {
-    interface IMapperProduto
+    public interface IMapperProduto
     {
         Produto MapperDtoToEntity(ProdutoDto produtoDto);
 
