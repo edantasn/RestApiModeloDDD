@@ -116,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CrossCutting\IOC\ConfigurationIOC.cs" />
+    <Compile Include="CrossCutting\IOC\ModuleIOC.cs" />
     <Compile Include="Data\Repository\RepositoryBase.cs" />
     <Compile Include="Data\Repository\RepositoryCliente.cs" />
     <Compile Include="Data\Repository\RepositoryProduto.cs" />
@@ -135,6 +136,10 @@
     <ProjectReference Include="..\RestApiModeloDDD.Domain.Core\RestApiModeloDDD.Domain.Core.csproj">
       <Project>{4FE4D022-FCC7-4489-BFCF-AF5315D3E32B}</Project>
       <Name>RestApiModeloDDD.Domain.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestApiModeloDDD.Domain.Services\RestApiModeloDDD.Domain.Services.csproj">
+      <Project>{4436A809-5FBD-49E2-BD0B-8F897D1F3AEB}</Project>
+      <Name>RestApiModeloDDD.Domain.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\RestApiModeloDDD.Domain\RestApiModeloDDD.Domain.csproj">
       <Project>{689E5FB1-9FEA-4219-BB9F-4AD61B60CD5B}</Project>
